@@ -15,7 +15,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="maincontainer">
+    <div class="maincontainer position-relative">
         <header class="myheader bg-light">
             <div class="container">
                 <div class="welcomeLine d-flex justify-content-between align-items-center">
@@ -105,55 +105,75 @@
                 </div>
             </div>
         </div>
-        <div class="contactInfo">
+
+        <div class="myFAQData">
             <div class="container">
-                <h1 class="fwt-bold border-bottom mx-2 py-2">Visit Us</h1>
-                <div class="row mb-3">
-                    <div class="col-md-4 px-3 py-3">
-                        <p class="mb-3"><b>Contact Details</b></p>
-                        <p class="mt-2 mb-2">SNo14/1,Katraj,Pune-411046</p>
-
-
-                            <p class="mb-1">info@bootstrap.com</p>
-                            <p class="mb-1">Tel:9860506821</p>
-                            <p class="mb-1">Fax:123-456-7890</p>
-                            <p class="mb-1">web.bootstrap.com</p>
-                    </div>
-                    <div class="col-md-4 px-3 py-3">
-                        <p class="mb-2"><b>Opening Hours:</b></p>
-                        <p class="mb-2">9:00am to 9:00pm</p>
-                        <p class="mb-2"><b>Saturday:</b></p>
-                        <p class="mb-2">9:00am to 4:00pm</p>
-                        <p class="mb-2"><b>Sunday:</b></p>
-                        <p class="mb-2">12:00pm to 4:00pm</p>
-                    </div>
-
-                    <div class="col-md-4 px-3 py-3">
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name">
-                          </div>
-                          <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
-                          </div>
-                          <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Subject:</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Subject">
-                          </div>
-                          <div class="mb-3">
-                            <textarea class="form-control buttondata" id="exampleFormControlTextarea1" rows="4"></textarea>
-                          </div>
-
-                          <button class="buttondata btn btn-light">Send Messages</button>
-                    </div>
-                </div>
-
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27399.693269159885!2d73.875456!3d18.4516608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eaea1fb16277%3A0x2d45c57c5cd2aec6!2s12%2C%20Sukhsagar%20Nagar%2C%20Katraj%2C%20Pune%2C%20Maharashtra%20411046!5e1!3m2!1sen!2sin!4v1734783135104!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mb-2 mt-2 w-100 h-50"></iframe>
+                <h1 class="fwt-bold mb-2 pb-2 mt-2 pt-2">FAQ</h1>
             </div>
-        </div>
 
-        <footer class="myfooter bg-black">
+            <div class="faqdata px-2 py-2 mx-2 my-2">
+                <p class="buttondata">
+                    <a class="btn btn-light w-100 border px-2 py-2" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      <b>Collapsible Group Item #1</b>
+                    </a>
+                  </p>
+                  <div class="collapse w-100 border" id="collapseExample">
+                    <div class="card card-body">
+                     <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                    </div>
+                  </div>
+                  <p class="buttondata">
+                    <a class="btn btn-light w-100 border px-2 py-2" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      <b>Collapsible Group Item #2</b>
+                    </a>
+                  </p>
+                  <div class="collapse w-100 border" id="collapseExample2">
+                    <div class="card card-body">
+                     <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                    </div>
+                  </div>
+                  <p class="buttondata">
+                    <a class="btn btn-light w-100 border px-2 py-2" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      <b>Collapsible Group Item #3</b>
+                    </a>
+                  </p>
+                  <div class="collapse w-100 border" id="collapseExample1">
+                    <div class="card card-body">
+                     <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                    </div>
+                  </div>
+                  <p class="buttondata">
+                    <a class="btn btn-light w-100 border px-2 py-2" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      <b>Collapsible Group Item #4</b>
+                    </a>
+                  </p>
+                  <div class="collapse w-100 border" id="collapseExample4">
+                    <div class="card card-body">
+                     <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                    </div>
+                  </div>
+                  <p class="buttondata">
+                    <a class="btn btn-light w-100 border px-2 py-2" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      <b>Collapsible Group Item #5</b>
+                    </a>
+                  </p>
+                  <div class="collapse w-100 border" id="collapseExample3">
+                    <div class="card card-body">
+                     <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                    </div>
+                  </div>
+                  <p class="buttondata">
+                    <a class="btn btn-light w-100 border px-2 py-2" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      <b>Collapsible Group Item #6</b>
+                    </a>
+                  </p>
+                  <div class="collapse w-100 border" id="collapseExample5">
+                    <div class="card card-body">
+                     <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                    </div>
+                  </div>
+        </div>
+        <footer class="myfooter bg-black positon-fixed bottom-0 left-0">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 px-3 py-3">
@@ -184,10 +204,10 @@
                             <p class="text-white mb-2 text-center"><b>INFORMATION</b></p>
                             <ul class="nav flex-column">
                                 <li class="nav-item">
-                                    <a class="nav-link text-white text-center" aria-current="page" href="#">Contact</a>
+                                    <a class="nav-link text-white text-center" aria-current="page" href="Contact.html">Contact</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-white text-center" href="#">Registration</a>
+                                    <a class="nav-link text-white text-center" href="Registration.html">Registration</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-white text-center" href="Legal.html">Legal Notice</a>
@@ -196,7 +216,7 @@
                                     <a class="nav-link text-white text-center" href="Terms.html">Terms and Conditions</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-white text-center" href="FAQ.html">FAQ</a>
+                                    <a class="nav-link text-white text-center">FAQ</a>
                                 </li>
                             </ul>
                         </div>
@@ -244,7 +264,6 @@
                 </div>
             </div>
         </footer>
-        </div>
-
+    </div>
 </body>
 </html>
