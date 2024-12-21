@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="maincontainer">
+        <header class="myheader bg-light">
+            <div class="container">
+                <div class="welcomeLine d-flex justify-content-between align-items-center">
+                    <p class="px-2 py-2">Welcome! <b>User</b></p>
+                    <div class="mydivdata d-flex align-items-center pt-2 pb-2">
+                        <span class="button btn btn-light border me-2">Rs</span>
+                        <span class="button btn btn-light border me-2">15500</span>
+                        <span class="btn btn-success text-white"><i class="fa-solid fa-cart-shopping me-1"></i></span>
+                    </div>
+                </div>
+                <nav class="mainNavbar navbar navbar-expand-lg">
+                    <div class="container-fluid px-3 py-3">
+                        <a class="navbar-brand text-white mb-3" href="#"><img src="./assets/logo.png"></a>
+                        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item ms-1">
+                                    <a class="nav-link active text-white" aria-current="page" href="#">Special
+                                        Offers</a>
+                                </li>
+                                <li class="nav-item ms-1">
+                                    <a class="nav-link text-white" href="#">Delivery</a>
+                                </li>
+                                <li class="nav-item ms-1">
+                                    <a class="nav-link text-white">Contacts</a>
+                                </li>
+                                <li class="nav-item ms-1">
+                                    <a class="btn btn-success text-white px-2 py-2" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">Login</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <form class="d-flex" role="search">
+                            <div class="input-group me-2">
+                                <span class="input-group-text myinput" id="basic-addon1"><i
+                                        class="fa-solid fa-magnifying-glass"></i></span>
+                                <input type="text" class="form-control" aria-label="Username"
+                                    aria-describedby="basic-addon1">
+                            </div>
+
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>All</option>
+                                <option value="CLOTHES">CLOTHES</option>
+                                <option value="FOOD AND BEVERAGES">FOOD AND BEVERAGES</option>
+                                <option value="HEALTH AND BEAUTY">HEALTH AND BEAUTY</option>
+                                <option value="SPORT AND LEISURE">SPORT AND LEISURE</option>
+                                <option value="BOOKS AND ENTERTAINTMENT">BOOKS AND ENTERTAINTMENT</option>
+                            </select>
+
+                            <button class="btn btn-primary text-white ms-2" type="submit">Search</button>
+
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Login Block</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <label for="exampleFormControlInput1" class="form-label mb-1">Email address</label>
+                        <input type="email" class="form-control mb-2 border" id="exampleFormControlInput1"
+                            placeholder="email">
+                        <label for="exampleFormControlPassword" class="form-label mb-1">Password</label>
+                        <input type="password" class="form-control mb-2 border" id="exampleFormControlPassword"
+                            placeholder="password">
+                        <input class="form-check-input me-2 mb-2" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Remember Me
+                        </label>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success">Login</button>
+                            <button type="button" class="btn btn-light mybutton" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="mydatarow">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 px-2 py-2">
+
+                        <div class="w-100 border d-flex justify-content-between align-items-center bg-light mb-3">
+                            <div class="maindata d-flex">
+                                <img src="./assets/ico-cart.png" class="me-2">
+                                <p class="py-3"><b>3 items in your cart</b></p>
+                            </div>
+                            <button class="mybutton text-white me-2 px-2 py-2 rounded">Rs 15500</button>
+                        </div>
+
+                        <div class="w-100 bg-light px-1 py-1 border d-none d-lg-block">
+                            <p class="btn btn-light w-100 text-center mb-0" data-bs-toggle="collapse"
+                                href="#collapseExample" role="button" aria-expanded="false"
+                                aria-controls="collapseExample">
+                                Electronics[230]
+                            </p>
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body bg-light">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-black" aria-current="page" href="#"><i
+                                                    class="fa-solid fa-arrow-right pe-2"></i>Cameras(100)</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-black" href="#"><i
+                                                    class="fa-solid fa-arrow-right pe-2"></i>Computers,Tablets
+                                                and,Laptops(30)</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-black" href="#"><i
+                                                    class="fa-solid fa-arrow-right pe-2"></i>Mobile Phones(70)</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-black"><i
+                                                    class="fa-solid fa-arrow-right pe-2"></i>Sound and Vision(15)</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-100 bg-light px-1 py-1 border d-none d-lg-block">
+                            <p class="btn btn-light w-100 text-center mb-0" data-bs-toggle="collapse"
+                                href="#collapseExample1" role="button" aria-expanded="false"
+                                aria-controls="collapseExample">
+                                Clothes[840]
+                            </p>
+                            <div class="collapse" id="collapseExample1">
+                                <div class="card card-body bg-light">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-black" aria-current="page" href="#"><i
+                                                    class="fa-solid fa-arrow-right pe-2"></i>Women's Clothings[200]</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-black" href="#"><i
+                                                    class="fa-solid fa-arrow-right pe-2"></i>Women's shoes[100]</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-black" href="#"><i
+                                                    class="fa-solid fa-arrow-right pe-2"></i>Women's Handbags[200]</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-black"><i
+                                                    class="fa-solid fa-arrow-right pe-2"></i>Men's Clothings [150]</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-black"><i
+                                                    class="fa-solid fa-arrow-right pe-2"></i>Kids's shoes [100]</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-black"><i
+                                                    class="fa-solid fa-arrow-right pe-2"></i>Kids's Clothings [100]</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-100 bg-light px-1 py-1 border d-none d-lg-block">
+                            <p class="btn btn-light w-100 text-center mb-0" data-bs-toggle="collapse"
+                                href="#collapseExample2" role="button" aria-expanded="false"
+                                aria-controls="collapseExample">
+                                Food And Beverages[1000]
+                            </p>
+                            <div class="collapse" id="collapseExample2">
+                                <div class="card card-body bg-light">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-black" aria-current="page" href="#"><i
+                                                    class="fa-solid fa-arrow-right pe-2"></i>Angoves[200]</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-black" href="#"><i
+                                                    class="fa-solid fa-arrow-right pe-2"></i>Bouchard's Aine and
+                                                Fills[200]</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-black" href="#"><i
+                                                    class="fa-solid fa-arrow-right pe-2"></i>French Rabbit[200]</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-black"><i
+                                                    class="fa-solid fa-arrow-right pe-2"></i>Louis Bernard[100]</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-black"><i
+                                                    class="fa-solid fa-arrow-right pe-2"></i>Garden[150]</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-black"><i
+                                                    class="fa-solid fa-arrow-right pe-2"></i>Khao Shong[150]</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-100 bg-light px-1 py-1 border d-none d-lg-block">
+                            <p class="btn btn-light w-100 text-center mb-0" data-bs-toggle="collapse"
+                                href="#collapseExample3" role="button" aria-expanded="false"
+                                aria-controls="collapseExample">
+                                Health and Beauty[18]
+                            </p>
+                            <div class="collapse" id="collapseExample3">
+                                <div class="card card-body bg-light">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-black" aria-current="page" href="#"><i
+                                                    class="fa-solid fa-arrow-right pe-2"></i>Amul Protein Bar[10]</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-black" aria-current="page" href="#"><i
+                                                    class="fa-solid fa-arrow-right pe-2"></i>Skipping Ropes[8]</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-100 bg-light px-1 py-1 border d-none d-lg-block">
+                            <p class="btn btn-light w-100 text-center mb-0" data-bs-toggle="collapse"
+                                href="#collapseExample4" role="button" aria-expanded="false"
+                                aria-controls="collapseExample">
+                                Sports and Leisure[58]
+                            </p>
+                            <div class="collapse" id="collapseExample4">
+                                <div class="card card-body bg-light">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-black" aria-current="page" href="#"><i
+                                                    class="fa-solid fa-arrow-right pe-2"></i>SG Cricket Kit[20]</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-black" href="#"><i
+                                                    class="fa-solid fa-arrow-right pe-2"></i>Leather Balls[30]</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-black" href="#"><i
+                                                    class="fa-solid fa-arrow-right pe-2"></i>Football[8]</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-100 bg-light px-1 py-1 border d-none d-lg-block">
+                            <p class="btn btn-light w-100 text-center mb-0" data-bs-toggle="collapse"
+                                href="#collapseExample5" role="button" aria-expanded="false"
+                                aria-controls="collapseExample">
+                                Books and Entertainment[14]
+                            </p>
+                            <div class="collapse" id="collapseExample5">
+                                <div class="card card-body bg-light">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-black" aria-current="page" href="#"><i
+                                                    class="fa-solid fa-arrow-right pe-2"></i>Raja ShivChhatrapati[5]</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-black" href="#"><i
+                                                    class="fa-solid fa-arrow-right pe-2"></i>Let us Java[5]</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-black" href="#"><i
+                                                    class="fa-solid fa-arrow-right pe-2"></i>Pune District Info[2]</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-black"><i
+                                                    class="fa-solid fa-arrow-right pe-2"></i>Cricket in my way[2]</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="mydata w-100 border d-flex flex-column justify-content-center align-items-center mt-3 bg-light rounded">
+                            <img src="./assets/products/panasonic.jpg" class="img-fluid w-50 mb-2 mt-1">
+                            <p class="mb-2"><b>Panasonic</b></p>
+                            <div class="d-flex justify-content-center align-items-center mb-2">
+                                <button class="btn btn-primary text-white me-2"><i
+                                        class="fa-solid fa-magnifying-glass"></i></button>
+                                <button class="btn btn-primary text-white me-2">Add to <i
+                                        class="fa-solid fa-cart-shopping"></i></i></button>
+                            </div>
+                            <button class="btn btn-success mb-2">Rs 2200</button>
+                        </div>
+
+                        <div
+                            class="mydata w-100 border d-flex flex-column justify-content-center align-items-center mt-3 bg-light rounded">
+                            <img src="./assets/products/kindle.png" class="img-fluid w-50 mb-2 mt-1">
+                            <p class="mb-2"><b>Kindle</b></p>
+                            <div class="d-flex justify-content-center align-items-center mb-2">
+                                <button class="btn btn-primary text-white me-2"><i
+                                        class="fa-solid fa-magnifying-glass"></i></button>
+                                <button class="btn btn-primary text-white me-2">Add to <i
+                                        class="fa-solid fa-cart-shopping"></i></i></button>
+                            </div>
+                            <button class="btn btn-success mb-2">Rs 2200</button>
+                        </div>
+
+                        <div
+                            class="mydata w-100 border d-flex flex-column justify-content-center align-items-center mt-3 bg-light rounded">
+                            <img src="./assets/payment_methods.png" class="img-fluid w-50 mb-2 mt-1">
+
+                            <p class="pb-2 pt-2"><b>Payment Methods</b></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 mt-lg-2 px-2 py-2">
+                        <div class="container">
+                            <nav aria-label="breadcrumb" class="bg-light rounded mb-2">
+                                <ol class="breadcrumb align-items-center px-2 py-2">
+                                  <li class="breadcrumb-item myactivedata" aria-current="page"><a href="index.html">Home</a></li>
+                                  <li class="breadcrumb-item myactivedata" aria-current="page">Login</li>
+                                </ol>
+                              </nav>
+
+                              <div class="mydata">
+                                <h4 class="mylogintitle fwt-bold border-bottom py-2">Login</h4>
+                              </div>
+
+                              <div class="row">
+                                <div class="col-md-6 px-2 py-2 mt-3">
+                                    <div class="myaccount bg-light border pt-4 px-2">
+                                       <p class="fwt-bold"><b>CREATE AN ACCOUNT</b></p> 
+                                       <p class="mt-2 mb-2">Enter the email address to create an account</p>
+                                       <form class="mt-4">
+                                        <div class="mb-3">
+                                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                          <input type="email" class="form-control buttondata" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email">
+                                        </div>
+                                        <button type="submit" class="btn btn-light buttondata mb-3">Create Your Account</button>
+                                      </form>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 px-2 py-2 mt-3">
+                                    <div class="myaccount bg-light border pt-4 px-2">
+                                      <p class="fwt-bold"><b>ALREADY REGISTERED ?</b></p>
+                                      <form class="mt-4">
+                                        <div class="mb-3">
+                                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                          <input type="email" class="form-control buttondata" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email">
+                                        </div>
+                                        <label for="exampleInputEmail1" class="form-label">Password</label>
+                                        <input type="password" class="form-control buttondata" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="password">
+                                        <button type="submit" class="btn btn-light mb-3 buttondata mt-3 ms-2">Sign In</button>
+                                        <span class="ps-2">Forgot Password ?</span>
+                                      </div>
+                                      
+                                      </form>
+                                    </div>  
+                                </div>
+                              </div>
+                        </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <footer class="myfooter bg-black">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 px-3 py-3">
+                        <div class="mvaluedata text-white">
+                            <p class="text-white mb-2 text-center"><b>ACCOUNTS</b></p>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white text-center" aria-current="page" href="#">Your
+                                        Account</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white text-center" href="#">Personal Information</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white text-center" href="#">Addresses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white text-center">Discount</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white text-center">Personal History</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 px-3 py-3">
+                        <div class="mvaluedata text-white">
+                            <p class="text-white mb-2 text-center"><b>INFORMATION</b></p>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white text-center" aria-current="page" href="Contact.html">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white text-center" href="Registration.html">Registration</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white text-center" href="#">Legal Notice</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white text-center">Terms and Conditions</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white text-center">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 px-3 py-3">
+                        <div class="mvaluedata text-white">
+                            <p class="text-white mb-2 text-center"><b>OUR OFFERS</b></p>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white text-center" aria-current="page" href="#">New
+                                        Products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white text-center" href="#">Top Seller</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white text-center" href="#">Special Offers</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white text-center">Manufacturers</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white text-center">Suppliers</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 px-3 py-3">
+                        <div class="mvaluedata text-white">
+                            <p class="text-white mb-3 text-center"><b>SOCIAL MEDIA</b></p>
+                            <div class="row align-items-center">
+                                <div class="col-sm-4 d-flex justify-content-center align-items-center">
+                                    <a href="#"> <img src="./assets/facebook.png" height="60" width="60"></a>
+                                </div>
+                                <div class="col-sm-4 d-flex justify-content-center align-items-center">
+                                    <a href="#"><img src="./assets/twitter.png" height="60" width="60"></a>
+                                </div>
+                                <div class="col-sm-4 d-flex justify-content-center align-items-center">
+                                    <a href="#"><img src="./assets/youtube.png" height="60" width="60"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
