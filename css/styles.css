@@ -74,4 +74,13 @@
     text-decoration: none !important;
   }
 
+  #available1
+  {
+    display: none;
+  }
+.mycompare
+{
+  text-decoration: none !important;
+  color: white !important;
+}
   
